@@ -1,37 +1,18 @@
-# ft(T) = a * (T − Tideal)^2 + 1
-# fu(U) = 1 + b * log10(U+1)
-# fo(O) = e ** (c * O)
-# fl(t) = 1 + g * t
-# fr(t) = e ** (d * t)
-
-# MODELO FINAL
-# N(t) = N0 * e**(-k * ft * fu * fo * fr * fl * t)
-
-
-
-# importação de biblioteca
 import math
 
 # PARÂMETROS
-
-
-# Sensibilidade à temperatura
-a = 0.05  
-# Sensibilidade à umidade     
-b =0.20
-# Intensidade da oxidação 
-c =0.10
-# Intensidade do efeito da radiação
-d =0.010 
-# Intensidade do efeito da luz
-g = 0.0002
-# Taxa básica de degradação 
-k = 0.010 
+a = 0.01      
+b =0.10
+c =0.02
+d =0.0003 
+g = 0.0002 
+k = 0.0002
 Tideal = 12
 
-# PARÂMETROS PARA NORA
-dNora = 0.002
+# PARÂMETROS com NORA
+dNora = 0.00005
 gNora = 0
+
 
 def menu():
     print("\n===== MENU =====")
